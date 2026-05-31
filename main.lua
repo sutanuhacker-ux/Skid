@@ -56,7 +56,7 @@ local function finishLoading()
 			local teleportScript = [[
 				shared.vapereload = true
 				if shared.VapeDeveloper then
-					loadstring(readfile('catrewrite/loader.lua'), 'loader')()
+					loadstring(readfile('catrewrite/main.lua'), 'main')()
 				else
 					loadstring(game:HttpGet('https://raw.githubusercontent.com/MaxlaserTech/CatV6/'..readfile('catrewrite/profiles/commit.txt')..'/loader.lua', true), 'loader')()
 				end
