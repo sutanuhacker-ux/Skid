@@ -88,7 +88,7 @@ end
 if not isfile('catrewrite/profiles/gui.txt') then
 	writefile('catrewrite/profiles/gui.txt', 'new')
 end
-local gui = readfile('catrewrite/profiles/gui.txt')
+local gui = 'new'--readfile('catrewrite/profiles/gui.txt')
 
 if not isfolder('catrewrite/assets/'..gui) then
 	makefolder('catrewrite/assets/'..gui)
